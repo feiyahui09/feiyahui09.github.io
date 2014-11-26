@@ -3,17 +3,45 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Archives | fyf</title>
+  <title>fyf</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description">
-<meta property="og:type" content="website">
+  <meta name="description" content="@(TIPS)
+零零散散
+
+R文件的属性全是int类型，都在内部类里面，所以混淆R文件语法如下
+
+   -keep class **.R$* {  
+        *;  
+    }
+
+tips about broadcasrReceiver execution time:  The specific constraint on BroadcastReceiver execution time">
+<meta property="og:type" content="article">
 <meta property="og:title" content="fyf">
-<meta property="og:url" content="http://yoursite.com/archives/">
+<meta property="og:url" content="http://yoursite.com/2014/11/26/零零散散/">
 <meta property="og:site_name" content="fyf">
-<meta property="og:description">
+<meta property="og:description" content="@(TIPS)
+零零散散
+
+R文件的属性全是int类型，都在内部类里面，所以混淆R文件语法如下
+
+   -keep class **.R$* {  
+        *;  
+    }
+
+tips about broadcasrReceiver execution time:  The specific constraint on BroadcastReceiver execution time">
+<meta property="og:image" content="./1416898623553.png">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="fyf">
-<meta name="twitter:description">
+<meta name="twitter:description" content="@(TIPS)
+零零散散
+
+R文件的属性全是int类型，都在内部类里面，所以混淆R文件语法如下
+
+   -keep class **.R$* {  
+        *;  
+    }
+
+tips about broadcasrReceiver execution time:  The specific constraint on BroadcastReceiver execution time">
 
   
     <link rel="alternative" href="/atom.xml" title="fyf" type="application/atom+xml">
@@ -61,9 +89,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-零零散散" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-零零散散" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2014/11/26/零零散散/" class="article-date">
   <time datetime="2014-11-26T15:29:53.000Z" itemprop="datePublished">Nov 26 2014</time>
@@ -147,104 +173,20 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-My-New-post" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2014/11/26/My-New-post/" class="article-date">
-  <time datetime="2014-11-26T15:24:20.000Z" itemprop="datePublished">Nov 26 2014</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>@(issue4java)</p>
-<h4 id="回调">回调</h4>
-<h2 id="看看人家是怎么说回调的吧">看看人家是怎么说回调的吧</h2>
-<blockquote>
-<p>简化理解回调函数- -<br>回调函数还真有点像您随身带的BP机：告诉别人号码，在它有事情时Call您回调用于层间协作，上层将本层函数安装在下层，这个函数就是回调，而下层在一定条件下触发回调，例如作为一个驱动，是一个底层，他在收到一个数据时，除了完成本层的处理工作外，还将进行回调，将这个数据交给上层应用层来做进一步处理，这在分层的数据通信中很普遍。<br>其实回调和API非常接近，他们的共性都是跨层调用的函数。但区别是API是低层提供给高层的调用，一般这个函数对高层都是已知的；<strong>而回调正好相反</strong>，他是高层提供给底层的调用，对于低层他是未知的，必须由高层进行安装，这个安装函数其实就是一个低层提供的API，安装后低层不知道这个回调的名字，但它通过一个函数指针来保存这个回调，在需要调用时，只需引用这个函数指针和相关的参数指针。<br>其实：回调就是该函数写在高层，低层通过一个函数指针保存这个函数，在某个事件的触发下，低层通过该函数指针调用高层那个函数</p>
-</blockquote>
-<p><a href="https://app.yinxiang.com/shard/s7/nl/788894/87633f7b-fadf-4cc0-b714-446ad57ad4fd/" target="_blank" rel="external">here</a></p>
-<h2 id="Wiki">Wiki</h2>
-<blockquote>
-<p>在计算机程序设计中，回调函数，或简称回调（Callback），是指通过函数参数传递到其它代码的，某一块可执行代码的引用。这一设计允许了底层代码调用在高层定义的子程序。  </p>
-<p>在缺少函数类型的参数的面向对象的程序语言中，例如Java，回调可以用传递抽象类或接口来模拟。回调的接收者会调用抽象类或接口的方法，这些方法由调用者提供实现。这样的对象通常是一些回调函数的集合，同时可能包含它所需要的数据。这种方法在实现某些设计模式时比较有用，例如访问者模式，观察者模式与策略模式。</p>
-</blockquote>
-<p><a href="https://app.yinxiang.com/shard/s7/nl/788894/d8144afb-ddfa-4c66-a3fe-94f306c4b7e7/" target="_blank" rel="external">here</a></p>
+  
+    <a href="/2014/11/26/My-New-post/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
 
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2014/11/26/My-New-post/" data-id="77nytrxcnx4ejo4p" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
 
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2014/09/08/hello-world/" class="article-date">
-  <time datetime="2014-09-08T14:31:04.000Z" itemprop="datePublished">Sep 8 2014</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2014/09/08/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">trobuleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2>
-<h3 id="Create_a_new_post">Create a new post</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server">Run server</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files">Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2014/09/08/hello-world/" data-id="axp32xf29u2n9aei" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-  
 </section>
         
           <aside id="sidebar">
