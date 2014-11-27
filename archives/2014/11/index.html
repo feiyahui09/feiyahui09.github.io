@@ -63,10 +63,93 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-My-New-post" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2014/11/27/My-New-post/" class="article-date">
+  <time datetime="2014-11-27T01:50:39.000Z" itemprop="datePublished">Nov 27 2014</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>@(issue4java)</p>
+<h4 id="回调">回调</h4>
+<h2 id="看看人家是怎么说回调的吧">看看人家是怎么说回调的吧</h2>
+<blockquote>
+<p>简化理解回调函数- -<br>回调函数还真有点像您随身带的BP机：告诉别人号码，在它有事情时Call您回调用于层间协作，上层将本层函数安装在下层，这个函数就是回调，而下层在一定条件下触发回调，例如作为一个驱动，是一个底层，他在收到一个数据时，除了完成本层的处理工作外，还将进行回调，将这个数据交给上层应用层来做进一步处理，这在分层的数据通信中很普遍。<br>其实回调和API非常接近，他们的共性都是跨层调用的函数。但区别是API是低层提供给高层的调用，一般这个函数对高层都是已知的；<strong>而回调正好相反</strong>，他是高层提供给底层的调用，对于低层他是未知的，必须由高层进行安装，这个安装函数其实就是一个低层提供的API，安装后低层不知道这个回调的名字，但它通过一个函数指针来保存这个回调，在需要调用时，只需引用这个函数指针和相关的参数指针。<br>其实：回调就是该函数写在高层，低层通过一个函数指针保存这个函数，在某个事件的触发下，低层通过该函数指针调用高层那个函数</p>
+</blockquote>
+<p><a href="https://app.yinxiang.com/shard/s7/nl/788894/87633f7b-fadf-4cc0-b714-446ad57ad4fd/" target="_blank" rel="external">here</a><br>
+        
+          <p class="article-more-link">
+            <a href="/2014/11/27/My-New-post/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2014/11/27/My-New-post/" data-id="77nytrxcnx4ejo4p" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2014/11/27/hello-world/" class="article-date">
+  <time datetime="2014-11-27T01:50:25.000Z" itemprop="datePublished">Nov 27 2014</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2014/11/27/hello-world/">Hello World</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">trobuleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick_Start">Quick Start</h2>
+<h3 id="Create_a_new_post">Create a new post</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+
+<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a><br>
+        
+          <p class="article-more-link">
+            <a href="/2014/11/27/hello-world/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2014/11/27/hello-world/" data-id="axp32xf29u2n9aei" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-零零散散" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2014/11/26/零零散散/" class="article-date">
-  <time datetime="2014-11-26T15:29:53.000Z" itemprop="datePublished">Nov 26 2014</time>
+    <a href="/2014/11/27/零零散散/" class="article-date">
+  <time datetime="2014-11-27T01:50:04.000Z" itemprop="datePublished">Nov 27 2014</time>
 </a>
     
   </div>
@@ -94,93 +177,16 @@
      }
 </code></pre><p>解决remove的方法就是反向循环：</p>
 <pre><code> <span class="keyword">for</span>(int <span class="built_in">i</span> = <span class="transposed_variable">list.</span><span class="built_in">size</span>() - <span class="number">1</span>; <span class="built_in">i</span> &gt;= <span class="number">0</span>; <span class="built_in">i</span>++)<span class="cell">{}</span>
-</code></pre></li>
-<li>取代AsyncTask时，thread的比UIThread优先级低一些<br>  Although it’s more complicated than AsyncTask, you might want to instead create your own Thread or HandlerThread class. If you do, you should set the thread priority to “background” priority by calling Process.setThreadPriority() and passing THREAD_PRIORITY_BACKGROUND. If you don’t set the thread to a lower priority this way, then the thread could still slow down your app because it operates at the same priority as the UI thread by default.</li>
-</ul>
-<ul>
-<li>module之间的proguarad 是独立的?！</li>
-<li>混合animation 的xml<br><img src="./1416898623553.png" alt="Alt text"></li>
-<li>AsyncTask ,Loader and Service with a Thread pool</li>
-</ul>
-<blockquote>
-<p>The Problem<br>Almost every application does work in a background thread. These “background tasks” are expected to keep the application responsive and robust, especially during unfavorable situations (e.g. limited network connectivity). In Android applications, there are several ways to implement background work:<br>• Async Task: Using an async task is the simplest approach, but it is tightly coupled with the activity lifecycle. If the activity dies (or is re-created), any ongoing async task will become wasted cycles or otherwise create unexpected behavior upon returning to the main thread. In addition, it is a terrible idea to drop a response from a network request just because a user rotated his/her phone.<br>• Loaders: Loaders are a better option, as they recover themselves after a configuration change. On the other hand, they are designed to load data from disk and are not well suited for long-running network requests.<br>• Service with a Thread Pool: Using a service is a much better solution, as it de-couples business logic from your UI. However, you will need a thread pool (e.g. ThreadPoolExecutor) to process requests in parallel, broadcast events to update the UI, and write additional code to persist queued requests to disk. As your application grows, the number of background operations grows, which force you to consider task prioritization and often-complicated concurrency problems.</p>
-<p>Our Solution Job Queue provides you a nice framework to do all of the<br>above and more. You define your background tasks as Jobs and enqueue<br>them to your JobManager instance. Job Manager will take care of<br>prioritization, persistence, load balancing, delaying, network<br>control, grouping etc. It also provides a nice lifecycle for your jobs<br>to provide a better, consistent user experience. Although not<br>required, it is most useful when used with an event bus. It also<br>supports dependency injection. Job Queue was inspired by a Google I/O<br>2010 talk on REST client applications</p>
-</blockquote>
-<ul>
-<li><p>string里面有%在编译的时候会格式化数据</p>
-<pre><code>   &lt;string <span class="variable">name=</span><span class="string">"share_mail_title_format"</span> <span class="variable">formatted=</span><span class="string">"false"</span>&gt;
-</code></pre></li>
-<li>Thread’s start() and run()  method</li>
-</ul>
-<blockquote>
-<p>First example: No multiple threads. Both execute in single (existing) thread. No thread creation.<br>R1 r1 = new R1();<br>R2 r2 = new R2();<br>r1 and r2 are just two different objects of the class that implements the Runnable interfaces which have that run() method. When you call r1.run() you are executing it in the current thread.<br>Second example: Two separate threads.<br>Thread t1 = new Thread(r1);<br>Thread t2 = new Thread(r2);<br>t1 and t2 are the objects of the class Thread. When you call t1.start(), it starts a new thread and calls the run() method of r1 internally to execute it within that new thread</p>
-<p>Blockquote</p>
-</blockquote>
-<ul>
-<li>Format<br>**<pre><code>   * Formats the time to look like <span class="string">"HH:MM:SS"</span>
-   *
-   * <span class="annotation">@param</span> millis The number of elapsed milliseconds
-   * <span class="annotation">@return</span> A formatted time value
-   */
-  <span class="keyword">public</span> <span class="keyword">static</span> String <span class="title">formatTime</span>(<span class="keyword">final</span> <span class="keyword">long</span> millis) {
-      <span class="comment">//TODO does not support hour&gt;=100 (4.1 days)</span>
-      <span class="keyword">return</span> String.format(<span class="string">"%02d:%02d:%02d"</span>,
-              millis / (<span class="number">1000</span> * <span class="number">60</span> * <span class="number">60</span>),
-              (millis / (<span class="number">1000</span> * <span class="number">60</span>)) % <span class="number">60</span>,
-              (millis / <span class="number">1000</span>) % <span class="number">60</span>
-      );
-  }
-</code></pre></li>
-</ul>
-<p>in your case it means output of integer values in 2 or more digits, the first being zero if number less than 9</p>
-<p><a href="http://www.cplusplus.com/reference/cstdio/printf/" target="_blank" rel="external">http://www.cplusplus.com/reference/cstdio/printf/</a></p>
-<ul>
-<li></li>
-</ul>
-
+</code></pre>
+        
+          <p class="article-more-link">
+            <a href="/2014/11/27/零零散散/#more">Read More</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2014/11/26/零零散散/" data-id="tfqp17ccpxyuikhk" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-My-New-post" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2014/11/26/My-New-post/" class="article-date">
-  <time datetime="2014-11-26T15:24:20.000Z" itemprop="datePublished">Nov 26 2014</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>@(issue4java)</p>
-<h4 id="回调">回调</h4>
-<h2 id="看看人家是怎么说回调的吧">看看人家是怎么说回调的吧</h2>
-<blockquote>
-<p>简化理解回调函数- -<br>回调函数还真有点像您随身带的BP机：告诉别人号码，在它有事情时Call您回调用于层间协作，上层将本层函数安装在下层，这个函数就是回调，而下层在一定条件下触发回调，例如作为一个驱动，是一个底层，他在收到一个数据时，除了完成本层的处理工作外，还将进行回调，将这个数据交给上层应用层来做进一步处理，这在分层的数据通信中很普遍。<br>其实回调和API非常接近，他们的共性都是跨层调用的函数。但区别是API是低层提供给高层的调用，一般这个函数对高层都是已知的；<strong>而回调正好相反</strong>，他是高层提供给底层的调用，对于低层他是未知的，必须由高层进行安装，这个安装函数其实就是一个低层提供的API，安装后低层不知道这个回调的名字，但它通过一个函数指针来保存这个回调，在需要调用时，只需引用这个函数指针和相关的参数指针。<br>其实：回调就是该函数写在高层，低层通过一个函数指针保存这个函数，在某个事件的触发下，低层通过该函数指针调用高层那个函数</p>
-</blockquote>
-<p><a href="https://app.yinxiang.com/shard/s7/nl/788894/87633f7b-fadf-4cc0-b714-446ad57ad4fd/" target="_blank" rel="external">here</a></p>
-<h2 id="Wiki">Wiki</h2>
-<blockquote>
-<p>在计算机程序设计中，回调函数，或简称回调（Callback），是指通过函数参数传递到其它代码的，某一块可执行代码的引用。这一设计允许了底层代码调用在高层定义的子程序。  </p>
-<p>在缺少函数类型的参数的面向对象的程序语言中，例如Java，回调可以用传递抽象类或接口来模拟。回调的接收者会调用抽象类或接口的方法，这些方法由调用者提供实现。这样的对象通常是一些回调函数的集合，同时可能包含它所需要的数据。这种方法在实现某些设计模式时比较有用，例如访问者模式，观察者模式与策略模式。</p>
-</blockquote>
-<p><a href="https://app.yinxiang.com/shard/s7/nl/788894/d8144afb-ddfa-4c66-a3fe-94f306c4b7e7/" target="_blank" rel="external">here</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2014/11/26/My-New-post/" data-id="77nytrxcnx4ejo4p" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2014/11/27/零零散散/" data-id="tfqp17ccpxyuikhk" class="article-share-link">Share</a>
       
       
     </footer>
@@ -205,7 +211,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/11/">November 2014</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/09/">September 2014</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/11/">November 2014</a><span class="archive-list-count">3</span></li></ul>
     </div>
   </div>
 
@@ -217,15 +223,15 @@
       <ul>
         
           <li>
-            <a href="/2014/11/26/零零散散/">(no title)</a>
+            <a href="/2014/11/27/My-New-post/">(no title)</a>
           </li>
         
           <li>
-            <a href="/2014/11/26/My-New-post/">(no title)</a>
+            <a href="/2014/11/27/hello-world/">Hello World</a>
           </li>
         
           <li>
-            <a href="/2014/09/08/hello-world/">Hello World</a>
+            <a href="/2014/11/27/零零散散/">(no title)</a>
           </li>
         
       </ul>
