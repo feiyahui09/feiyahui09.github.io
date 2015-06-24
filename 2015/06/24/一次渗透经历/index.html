@@ -4,17 +4,17 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>Foucus on Mobile Develop</title>
+    <title>一次渗透经历 | Foucus on Mobile Develop</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="fyf">
     
-    <meta name="description" content="海印集团下面的o2o项目，客户端商家版，叫聚客宝，在它的反馈页面，放入代码
+    <meta name="description" content="客户端XSS漏洞
+海印集团下面的o2o项目，客户端商家版，叫聚客宝，在它的反馈页面，放入代码
  
 ok，反馈成功，应该存在xss漏洞。果然，一会就打到kefuzhongxin这个账号了。
  
- ok，拿这个cookie登录进去，后台http://manage.hiooy.com/admin/index-init。
- ">
+ ok，拿这个cookie登录进去，后台http://manage.hiooy.com/admin/inde">
     
     
     
@@ -76,14 +76,14 @@ ok，反馈成功，应该存在xss漏洞。果然，一会就打到kefuzhongxin
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2015/06/24/一次渗透经历/" title="" itemprop="url"></a>
+      <a href="/2015/06/24/一次渗透经历/" title="一次渗透经历" itemprop="url">一次渗透经历</a>
   </h1>
   <p class="article-author">By
        
 		<a href="http://yoursite.com/about" title="fyf" target="_blank" itemprop="author">fyf</a>
 		
   <p class="article-time">
-    <time datetime="2015-06-24T02:09:54.000Z" itemprop="datePublished"> Published Jun 24 2015</time>
+    <time datetime="2015-06-24T02:19:51.000Z" itemprop="datePublished"> Published Jun 24 2015</time>
     
   </p>
 </header>
@@ -92,25 +92,30 @@ ok，反馈成功，应该存在xss漏洞。果然，一会就打到kefuzhongxin
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">Contents</strong>
 		
-			
+			<ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#客户端XSS漏洞"><span class="toc-number">1.</span> <span class="toc-text">客户端XSS漏洞</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#后台越权漏洞"><span class="toc-number">2.</span> <span class="toc-text">后台越权漏洞</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#影响"><span class="toc-number">3.</span> <span class="toc-text">影响</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#总结"><span class="toc-number">4.</span> <span class="toc-text">总结</span></a></li></ol>
 		
 		</div>
 		
-		<p>海印集团下面的o2o项目，客户端商家版，叫聚客宝，在它的反馈页面，放入代码</p>
+		<h3 id="客户端XSS漏洞">客户端XSS漏洞</h3>
+<p>海印集团下面的o2o项目，客户端商家版，叫聚客宝，在它的反馈页面，放入代码</p>
 <p><img src="http://i1.tietuku.com/3aeac520f9e18073.png" alt=""> </p>
 <p>ok，反馈成功，应该存在xss漏洞。果然，一会就打到kefuzhongxin这个账号了。</p>
 <p><img src="http://i1.tietuku.com/171704f459d85074.png" alt=""> </p>
 <p> ok，拿这个cookie登录进去，后台<a href="http://manage.hiooy.com/admin/index-init。" target="_blank" rel="external">http://manage.hiooy.com/admin/index-init。</a></p>
 <p><img src="http://i1.tietuku.com/84efc4e9c9535ce7.png" alt=""> </p>
+<h3 id="后台越权漏洞">后台越权漏洞</h3>
 <p>发现修改密码的接口是这样的，</p>
 <p><img src="http://i1.tietuku.com/104e283885a21c9d.png" alt=""> </p>
 <p>发现没有数字签名，猜测id对应后台账号，试了下tamper data改id=1的密码</p>
 <p><img src="http://i1.tietuku.com/69538daf104d9337.png" alt=""> </p>
 <p> 居然修改成功。<br>这样，在重新试了下admin账号，用改了之后的密码登录，竟然成功。ok，越权修改漏洞。</p>
 <p><img src="http://i1.tietuku.com/addb4d26a4f8d71c.png" alt=""> </p>
+<h3 id="影响">影响</h3>
 <p>获得超级管理员权限，如下</p>
 <p><img src="http://i1.tietuku.com/82aa4ff21fcfed3f.png" alt=""><br><img src="http://i1.tietuku.com/e05aee714e26f5ab.png" alt=""> </p>
 <p>涉及17万的会员资料，几千家商户资料。。已反馈wooyun~</p>
+<h3 id="总结">总结</h3>
+<p>好吧， 第一次真正渗透，有点紧张，实话说技术难度不高，思路也是乌云上面启发，不过还是挺有意思的~</p>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -122,7 +127,7 @@ ok，反馈成功，应该存在xss漏洞。果然，一会就打到kefuzhongxin
 
 <div class="article-share" id="share">
 
-  <div data-url="http://yoursite.com/2015/06/24/一次渗透经历/" data-title="Foucus on Mobile Develop" data-tsina="null" class="share clearfix">
+  <div data-url="http://yoursite.com/2015/06/24/一次渗透经历/" data-title="一次渗透经历 | Foucus on Mobile Develop" data-tsina="null" class="share clearfix">
   </div>
 
 </div>
@@ -150,7 +155,7 @@ ok，反馈成功，应该存在xss漏洞。果然，一会就打到kefuzhongxin
   <div id="toc" class="toc-aside">
   <strong class="toc-title">Contents</strong>
  
- 
+ <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#客户端XSS漏洞"><span class="toc-number">1.</span> <span class="toc-text">客户端XSS漏洞</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#后台越权漏洞"><span class="toc-number">2.</span> <span class="toc-text">后台越权漏洞</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#影响"><span class="toc-number">3.</span> <span class="toc-text">影响</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#总结"><span class="toc-number">4.</span> <span class="toc-text">总结</span></a></li></ol>
  
   </div>
 
