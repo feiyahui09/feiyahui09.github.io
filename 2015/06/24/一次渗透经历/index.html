@@ -9,9 +9,12 @@
     
     <meta name="author" content="fyf">
     
-    <meta name="description" content="海印集团下面的o2o项目，客户端商家版，叫聚客宝，在它的反馈页面，放入代码。 
-ok，反馈成功，应该存在xss漏洞。果然，一会就打到kefuzhongxin这个账号了。 ok，拿这个cookie登录进去，后台http://manage.hiooy.com/admin/index-init。 
-发现修">
+    <meta name="description" content="海印集团下面的o2o项目，客户端商家版，叫聚客宝，在它的反馈页面，放入代码
+ 
+ok，反馈成功，应该存在xss漏洞。果然，一会就打到kefuzhongxin这个账号了。
+ 
+ ok，拿这个cookie登录进去，后台http://manage.hiooy.com/admin/index-init。
+ ">
     
     
     
@@ -80,7 +83,7 @@ ok，反馈成功，应该存在xss漏洞。果然，一会就打到kefuzhongxin
 		<a href="http://yoursite.com/about" title="fyf" target="_blank" itemprop="author">fyf</a>
 		
   <p class="article-time">
-    <time datetime="2015-06-23T16:50:27.000Z" itemprop="datePublished"> Published Jun 24 2015</time>
+    <time datetime="2015-06-24T02:09:54.000Z" itemprop="datePublished"> Published Jun 24 2015</time>
     
   </p>
 </header>
@@ -93,11 +96,21 @@ ok，反馈成功，应该存在xss漏洞。果然，一会就打到kefuzhongxin
 		
 		</div>
 		
-		<p>海印集团下面的o2o项目，客户端商家版，叫聚客宝，在它的反馈页面，放入代码。<br><img src="/Users/fyf/blog/source/image/0.png" alt=""> </p>
-<p>ok，反馈成功，应该存在xss漏洞。果然，一会就打到kefuzhongxin这个账号了。<br><img src="images/1.png" alt=""><br> ok，拿这个cookie登录进去，后台<a href="http://manage.hiooy.com/admin/index-init。" target="_blank" rel="external">http://manage.hiooy.com/admin/index-init。</a><br><img src="images/2.png" alt=""> </p>
-<p>发现修改密码的接口是这样的，<br><img src="images/3.png" alt=""> </p>
-<p>发现没有数字签名，猜测id对应后台账号，试了下改id=1的密码，<br><img src="images/4.png" alt=""><br> 居然修改成功。<br>这样，在重新试了下admin账号，用改了之后的密码登录，竟然成功。ok，越权修改漏洞。<br><img src="images/5.png" alt=""><br>获得超级管理员，<br><img src="images/6.png" alt=""><br><img src="images/7.png" alt=""> </p>
-<p>涉及17万的会员资料，几千家商户资料。。已反馈wooyun</p>
+		<p>海印集团下面的o2o项目，客户端商家版，叫聚客宝，在它的反馈页面，放入代码</p>
+<p><img src="http://i1.tietuku.com/3aeac520f9e18073.png" alt=""> </p>
+<p>ok，反馈成功，应该存在xss漏洞。果然，一会就打到kefuzhongxin这个账号了。</p>
+<p><img src="http://i1.tietuku.com/171704f459d85074.png" alt=""> </p>
+<p> ok，拿这个cookie登录进去，后台<a href="http://manage.hiooy.com/admin/index-init。" target="_blank" rel="external">http://manage.hiooy.com/admin/index-init。</a></p>
+<p><img src="http://i1.tietuku.com/84efc4e9c9535ce7.png" alt=""> </p>
+<p>发现修改密码的接口是这样的，</p>
+<p><img src="http://i1.tietuku.com/104e283885a21c9d.png" alt=""> </p>
+<p>发现没有数字签名，猜测id对应后台账号，试了下tamper data改id=1的密码</p>
+<p><img src="http://i1.tietuku.com/69538daf104d9337.png" alt=""> </p>
+<p> 居然修改成功。<br>这样，在重新试了下admin账号，用改了之后的密码登录，竟然成功。ok，越权修改漏洞。</p>
+<p><img src="http://i1.tietuku.com/addb4d26a4f8d71c.png" alt=""> </p>
+<p>获得超级管理员权限，如下</p>
+<p><img src="http://i1.tietuku.com/82aa4ff21fcfed3f.png" alt=""><br><img src="http://i1.tietuku.com/e05aee714e26f5ab.png" alt=""> </p>
+<p>涉及17万的会员资料，几千家商户资料。。已反馈wooyun~</p>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -152,10 +165,6 @@ ok，反馈成功，应该存在xss漏洞。果然，一会就打到kefuzhongxin
   <div class="linkslist">
   <p class="asidetitle">Links</p>
     <ul>
-        
-          <li>
-            <a href="http://wuchong.me" target="_blank" title="Jark&#39;s Blog">Jark&#39;s Blog</a>
-          </li>
         
           <li>
             <a href="http://hexo.io" target="_blank" title="Hexo">Hexo</a>
