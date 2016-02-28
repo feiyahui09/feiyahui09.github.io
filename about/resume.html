@@ -7,9 +7,9 @@
 <meta http-equiv="Cache-Control" content="no-siteapp">
 <link rel="alternate" media="handheld" href="#">
 <meta charset="utf-8">
-<title>朱定辉的简历</title>
-<meta content=" " name="description">
-<meta content=" " name="keywords">
+<title>朱定辉的简历-拉勾网-最专业的互联网招聘平台</title>
+<meta content="拉勾网是3W旗下的互联网领域垂直招聘网站" name="description">
+<meta content="拉勾,拉勾网,拉勾招聘,拉钩, 拉钩网 ,互联网招聘,拉勾互联网招聘, 移动互联网招聘, 垂直互联网招聘, 微信招聘, 微博招聘, 拉勾官网, 拉勾百科,跳槽, 高薪职位, 互联网圈子, IT招聘, 职场招聘, 猎头招聘,O2O招聘, LBS招聘, 社交招聘, 校园招聘, 校招,社会招聘,社招" name="keywords">
 </head>
 <body>
 <div id="body">
@@ -393,7 +393,9 @@ content:"...";
 					<div class="mr_p_name mr_w604 clearfixs">
 						<span class="mr_name">朱定辉</span>
 					</div>
-					 
+					<div class="mr_p_introduce mr_w604 clearfixs">
+						<span class="mr_intro">3年Android开发经验，学习能力强，有技术追求</span>
+					</div>
 					<div class="mr_p_info mr_infoed mr_w604 clearfixs">		
 						<div class="info_t">
 							<!--  需要加判断 -->
@@ -438,24 +440,21 @@ content:"...";
 									<div class="mr_content_l">
 										<div class="l2">
 											<h4>广州食为天科技有限公司</h4>
-											<span>Android开发工程师（兼Android小组负责人）</span>
+											<span>Android开发工程师</span>
 										</div>
 									</div>
 									<div class="mr_content_r">
-										<span>2015.07 -- 至今</span>
+										<span>2015.07 -- 2016.02</span>
 									</div>							
 								</div>
 								
 								<div class="mr_content_m olpf">
 									<p> </p>
- 
-<p>（注：因公司业务变动而导致的内部调岗，食为天系上座巴的母公司）<br></p>
+<p>（注：内部调岗，食为天系上座巴的母公司）<br></p>
 <ul>
  <li><p>俏掌柜收银软件开发（多POS版本）</p></li>
  <li><p>作为Android团队（共4人）负责人，分享以及推进新技术新工具应用，协助处理开发难点。</p></li>
 </ul>
-
- 
 <p><br></p>
 <p> </p>
 								</div>	
@@ -479,7 +478,6 @@ content:"...";
  <li><p>上座巴微信开发以及商户后台开发（2014.11-2015.2）</p></li>
  <li><p>俏掌柜收银软件开发（2015.3-2015.6）</p></li>
 </ul>
-<p><br></p>
 								</div>	
 								</div>
 								<div class="mr_jobe_list">
@@ -499,8 +497,6 @@ content:"...";
 									<ul>
  <li><p>电信手机云项目客户端开发</p></li>
 </ul>
-<p><br></p>
- 
 								</div>	
 								</div>
 							</div>
@@ -562,17 +558,19 @@ content:"...";
 									</div>
 									
 									<div class="mr_content_r">
-										<span>2015.07 -- 2015.12</span>
+										<span>2015.07 -- 2016.02</span>
 									</div>							
 								</div>
 								<div class="mr_content_m olpf">
-									<p>&nbsp; &nbsp; &nbsp; &nbsp;满足一店多POS的场景，增加先吃后付模式和台位概念，在店内不部署服务器和离线（无外网）情况下，店内数据能及时同步，打印机任务有序且不丢单。技术上，选取一台Andorid POS机，并实现为支持WebSocket的轻量Http服务器，充当“服务器”的作用，建立异步双工长连接来进行通讯，安全和稳定性上有保证。</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp;本人独自负责客户端相关业务实现，期间主动参与技术方案调研和讨论，并高质量实现，得到好评。</p>
+									<p>&nbsp; &nbsp; &nbsp; &nbsp;满足一店多POS的场景，增加先吃后付模式和台位，在店内不部署服务器或无外网情况下，店内POS之间数据能及时同步，打印机任务有序且不丢单。</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;本人独自负责客户端相关业务实现，期间主动参与技术方案调研和讨论，并高质量实现，得到好评。该版本通过测试，由于运营原因，暂未发布。</p>
 <ul>
- <li><p>实现打印任务的重打机制，以及解决打印机丢单的问题，涉及网络和多线程编程等；</p></li>
- <li><p>定义数据通讯格式，设计合理数据结构，处理并发问题，实现异步双工长连接的稳定通讯。且实现了POS间的数据重传机制，处理各种边界条件，同步的准确性有保证；</p></li>
+ <li><p>UDP实现设备发现，主机与非主机通过TCP长连接完成数据同步，处理各种边界条件，确保数据同步的准确和稳定；</p></li>
+ <li><p>自定义基于TCP的二进制通讯协议，实现协议加密，采用应用层心跳保持连接，实现消息回执和重发机制，保证消息可达；</p></li>
+ <li><p>实现打印任务的控制和重打机制，解决多进程抢占导致的死锁问题和弱网环境下丢单的问题；<br></p></li>
  <li><p>引入RxJava，并结合Retrofit、RxBinding等，优化复杂场景，保持代码逻辑上简洁；</p></li>
 </ul>
+<p><br></p>
 								</div>	
 								</div>	
 								<div class="mr_jobe_list">
@@ -653,9 +651,13 @@ content:"...";
 									</div>							
 								</div>
 								<div class="mr_content_m olpf">
-									<p>&nbsp; &nbsp; &nbsp; &nbsp;应用超市帮助安卓手机用户发现最热门应用与游戏，提供免费下载，支持快捷搜索，智能安装更省心。</p>
-<p>内容：项目中负责业务和UI实现；</p>
-<p>收获：参与中型项目的团队开发经验、下载管理的底层设计、图片相关问题、framework层相关机制。</p>
+									<p>&nbsp; &nbsp; &nbsp; &nbsp;手机云桌面上的一款内置应用，帮助用户发现热门应用与游戏，提供免费下载，支持快捷搜索，智能安装。本人参与项目迭代，负责客户端相关业务和UI实现。</p>
+<ul>
+ <li><p>参与中大型项目的团队开发经历，涉及framework层相关知识；</p></li>
+ <li><p>参与一些底层轮子的开发和优化，如下载管理、图片相关问题；</p></li>
+ <li><p>参与封装一个内部广告平台的Andorid SDK，提供公司广告平台展示、效果统计。并接入到应用超市和掌上营业厅；</p></li>
+</ul>
+<p><br></p>
 <p><br></p>
 								</div>	
 								</div>	
@@ -673,9 +675,11 @@ content:"...";
 									</div>							
 								</div>
 								<div class="mr_content_m olpf">
-									<p>&nbsp; &nbsp; &nbsp; &nbsp;话费使用、话费余额、上网流量、套餐详情点击查询，话费轻松充，流量随时订，让消费明明白白。</p>
-<p>内容：项目中负责业务和UI实现</p>
-<p>收获：自定义view，RemoteView机制，Android IPC机制</p>
+									<p>&nbsp; &nbsp; &nbsp; &nbsp;手机云桌面上的一款内置应用，提供话费使用、话费余额、上网流量、套餐详情的查询，轻松话费充，订流量。本人参与项目迭代，负责客户端相关业务和UI实现。<br></p>
+<ul>
+ <li><p>自定义圆形饼状View，显示消费流量百分比，且在widget上显示，涉及RemoteView机制；</p></li>
+ <li><p>电信业务；<br></p></li>
+</ul>
 <p><br></p>
 								</div>	
 								</div>	
@@ -693,9 +697,8 @@ content:"...";
 									</div>							
 								</div>
 								<div class="mr_content_m olpf">
-									<p>&nbsp; &nbsp; &nbsp; &nbsp;一款第三方社交客户端，集成绑定新浪微博、腾讯微博、人人网，新消息及时提醒，多社交平台随心切换。</p>
-<p>内容：项目中负责业务和UI实现</p>
-<p>收获：oath2授权机制，数据安全知识（加密以及认证），各大开放平台接口设计</p>
+									<p>&nbsp; &nbsp; &nbsp; &nbsp;一款第三方社交客户端，集成绑定新浪微博、腾讯微博、人人网，新消息及时提醒，多社交平台随心切换。本人负责相关业务和UI实现</p>
+<p>&nbsp; &nbsp; &nbsp; 收获：oath2授权机制，数据安全知识（加密以及认证）。</p>
 <p><br></p>
 								</div>	
 								</div>	
@@ -703,7 +706,20 @@ content:"...";
 						</div>
 					</div>
 					<!--                 作品展示                                                -->
-				 
+					<div id="worksShow">
+						<div>
+							<div class="mr_moudle_head clearfixs">
+								<div class="mr_head_l">
+									<div class="mr_title">
+										<span class="mr_title_l"></span><span class="mr_title_c">作品展示</span><span class="mr_title_r"></span>
+									</div>
+								</div>
+							</div>
+							<div class="mr_moudle_content">
+								
+							</div>	
+						</div>
+					</div>	
 					<!--               自我描述                                             -->
 					<div id="selfDescription">
 						<div>
@@ -715,25 +731,13 @@ content:"...";
 								</div>
 							</div>
 							<div class="mr_moudle_content clearfixs">
-							 
+								<div class="mr_self_l">
+									<!-- 自我描述头像为基本信息页面上传的头像，稍后和后台确认这个 -->
+									<i></i>
+									<img src="http://www.lagou.com/images/myresume/default_headpic.png" alt="朱定辉">
+								</div>	
 								<div class="mr_self_r">
-									<p><br></p>
-<ul>
- <li><p>了解Framework层面，有 Android 源码分析经验；会从源码角度思考问题，分析bugs；<br></p></li>
- <li><p>了解许多开源项目，熟悉常用开源框架原理和设计，如Volley、EventBus等；</p></li>
- <li><p>做过许多自定义 View，对 ViewGroup 继承编写、 Canvas 类 API 熟悉；</p></li>
- <li><p>在意代码的坏味道，有能力编写规范，思路清晰且易于维护的代码；</p></li>
- <li><p>熟悉面向对象，在意封装、继承和接口设计，了解常用设计模式，了解 MVP 与 MVVM；</p></li>
- <li><p>懂得抓包,在意App安全，熟悉代码混淆，反编译；</p></li>
- <li><p>在意内存，懂得内存泄露防范、排解，熟悉&nbsp;Systrace，Leakcanary等工具；</p></li>
- <li><p>熟悉RxJava；</p></li>
- <li><p>了解后端开发；</p></li>
- <li><p>关注开源社区，科学上网，善于从Googl/StackOverflow找问题答案，能够流畅阅读英语技术文档；</p><p><br></p><p>最近读过的书：</p></li>
- <li><p>《重构-改善既有代码的设计》</p></li>
- <li><p>《Android开发艺术探索》</p></li>
- <li><p>《Android源码设计模式解析》</p></li>
-</ul>
- 
+									<p>暂无</p>
 <p><br></p> 								
 								</div>														
 							</div>						
@@ -765,7 +769,19 @@ content:"...";
 					</div>
 					</div>
 					
-			 
+					<div id="skillsAssess">
+						<div>
+							<div class="mr_moudle_head clearfixs">
+								<div class="mr_head_l">
+									<div class="mr_title">
+										<span class="mr_title_l"></span><span class="mr_title_c">技能评价</span><span class="mr_title_r"></span>
+									</div>
+								</div>
+							</div>
+							<div class="mr_moudle_content">
+							</div>						
+						</div>
+					</div>	
 					
 					<!--               自定义模块                                           -->
 					<div id="customBlock">
